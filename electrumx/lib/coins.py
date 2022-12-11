@@ -1719,27 +1719,27 @@ class DeepOnion(Coin):
         return x13_hash.getPoWHash(header)
 
 
-class Peercoin(Coin):
-    NAME = "Peercoin"
-    SHORTNAME = "PPC"
+class Pozoqo(Coin):
+    NAME = "Pozoqo"
+    SHORTNAME = "PZQ"
     NET = "mainnet"
     P2PKH_VERBYTE = bytes.fromhex("37")
     P2SH_VERBYTES = (bytes.fromhex("75"),)
     WIF_BYTE = bytes.fromhex("b7")
-    GENESIS_HASH = ('0000000032fe677166d54963b62a4677'
-                    'd8957e87c508eaa4fd7eb1c880cd27e3')
+    GENESIS_HASH = ('39b2079b2f5c079450036f8851fe4b96c'
+                    'fa46fefaa09c8c0392cf13838037307')
     DESERIALIZER = lib_tx.DeserializerTxTimeSegWit
     DAEMON = daemon.FakeEstimateFeeDaemon
     ESTIMATE_FEE = 0.001
     RELAY_FEE = 0.01
-    TX_COUNT = 1691771
-    TX_COUNT_HEIGHT = 455409
+    TX_COUNT = 388
+    TX_COUNT_HEIGHT = 389
     TX_PER_BLOCK = 4
     RPC_PORT = 9902
     REORG_LIMIT = 5000
 
     PEERS = [
-        "electrum.peercoinexplorer.net s"
+        "electrumx.pozoqo.tech s"
     ]
 
     VALUE_PER_COIN = 1000000
